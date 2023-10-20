@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primaria: #E3DACD; /*fundo*/
+    --secundaria: #000000; /*letras*/
+    --tercearia: #A5986E; /*detahes*/
+    --hoover: #bdb291;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: auto;
+    box-sizing: border-box;
+    background-color: var(--primaria);
+    color: var(--secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__links {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--tercearia);
+    text-decoration: none;
+}
+
+.titulo__destaque{
+    color: var(--tercearia);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+.apresentacao{
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.2rem;
+    font-family: 'rubik', sans-serif;
+    font-weight: 300;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.links__subtitulo{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+
+.links{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid var(--tercearia);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--secundaria);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.links img{
+    height: 35px;
+}
+
+.links:hover{
+    background-color: var(--hoover);
+    width: 60%;
+}
+
+.foto {
+    width: 50%;
+    border-radius: 5%;
+  }
+
+.rodape{
+    color: var(--secundaria);
+    background-color: var(--tercearia);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    position: fixed;
+    bottom:0%;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 6%;
+    }
+    .foto{
+        width: 80%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+        padding: 10%;
+    }
+
+}
