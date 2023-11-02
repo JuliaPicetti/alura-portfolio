@@ -85,7 +85,10 @@ body{
     font-size: 1.3rem;
 }
 
-
+.teste{
+    display: flex; 
+    align-items: center;
+}
 .links{
     display:flex;
     justify-content: center;
@@ -146,6 +149,7 @@ body{
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
+        gap: 25px;
     }
 
     .apresentacao__conteudo{
